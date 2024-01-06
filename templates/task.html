@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        p {
+            color: #888;  /* Different font color for paragraphs */
+            margin: 5px 0; /* Adjusted margin for paragraphs */
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Overview</h1>
+    <ul>
+        <li>Task 1: <a href="{% url 'task1' %}" target="_blank">Framework Setup</a></li>
+        <li>Task 2 & 3 (Combined): <a href="{% url 'task3' %}" target="_blank">RESTful API Development & Database Interaction</a></li>
+        <li>
+            Task 4: <a href="{% url 'task4' %}" target="_blank">Authentication</a>
+            <p>I have used JWT Authentication. You can use the following credentials for testing:</p>
+            <p style="color: #d16b;">Username: 'boston' | Password: 'boston123'</p>
+        </li>
+        <li>
+            Task 5: <a href="{% url 'task5' %}" target="_blank">Video Generation</a>
+            <p>I have created an API that takes a YouTube video URL and a title. The title will be embedded inside the video.</p>
+            <p>Example:</p>
+            <p style="color: #d16b;">URL: https://www.youtube.com/watch?v=QC8iQqtG0hg</p>
+            <p style="color: #d16b;">Title: 'milkyway'</p>
+        </li>
+    </ul>
+</body>
+</html>
