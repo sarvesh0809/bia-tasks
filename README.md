@@ -9,3 +9,6 @@ pip install -r requirements.txt
 
 Step 4: Run Migrations - 
 python manage.py migrate
+
+Step 5: Run Server - 
+python manage.py runserver
